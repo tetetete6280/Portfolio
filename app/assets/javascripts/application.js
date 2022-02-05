@@ -10,9 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
 
 // ↓ここからコピペ
@@ -90,3 +92,13 @@ $(function(){
 
 
 });
+
+
+
+// ↓ここから追加
+// ↓ハンバーガーメニュー↓
+$('.nav_toggle').on('click', function () {
+  $('.nav_toggle, .nav').toggleClass('show');
+});
+// ↑ハンバーガーメニュー↑
+

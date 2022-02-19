@@ -1,7 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'pages';
-
+/* 全体↓
+------------------------------------------------------------*/
+body{
+  background: #EEEEEE;
+}
+/* パーツ↓
+------------------------------------------------------------*/
 .btn-white {
   color: #fff;
   border: 1px solid #fff;
@@ -21,12 +27,19 @@
   width: 100%;
   z-index: 10000;
 }
+
+/* ナビバー↓
+------------------------------------------------------------*/
+#navbar{
+  background-color: #546465;
+  width: 100%;
+  height: 40px;
+}
+
 /* ↓ハンバーガーメニュー↓
 ------------------------------------------------------------*/
 // ↓クリック前(ボタン)↓
 .nav_toggle {
-  top: 50px;
-  left: 50px;
   display: block;
   position: relative;
   width: 1.75rem;

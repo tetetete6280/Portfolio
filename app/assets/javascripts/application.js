@@ -98,7 +98,8 @@
 // ↓ここから追加
 // ↓ハンバーガーメニュー↓
 $('.nav_toggle').on('click', function () {
-  $('.nav_toggle, .nav').toggleClass('show');
+    window.alert("test");
+//   $('.nav_toggle, .nav').toggleClass('show');
 });
 // ↑ハンバーガーメニュー↑
 

@@ -1,75 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="最新技術と自然との調和を目指す"><!--変更予定-->
-    <meta name="viewport" content="width=device-width"><!--変更予定-->
-    <title>Portfolio</title><!--変更予定-->
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width">
+    <title>MONEY_FOLIO</title>
+    
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" media="all" href="app/assets/stylesheets/application.scss">
-      <!--API変更予定-->
-      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>-->
-    <script src="app/assets/javascripts/application.js"></script>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-<body>
-  
-<!--<nav id="mainnav">-->
-<!--	<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>-->
-<!--	<div class="panel">-->
-<!--		<ul>-->
-<!--			<li><= link_to 'トップページ', root_path %></li>-->
-<!--			<li><a href="#sec01">ログイン</a></li>-->
-<!--			<li><a href="#sec02">このサイトの使い方</a></li>-->
-<!--			<li><a href="#sec03">このサイトについて</a></li>-->
-<!--		</ul>-->
-<!--	</div>-->
-<!--</nav>-->
+  <body>
+    <!--↓ハンバーガーメニュー↓-->
+    <div id="navbar">
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+    
+    <nav class="nav">
+      <ul class="nav_menu_ul">
+        <li class="nav_menu_li"><a href="#">トップページ</a></li><!--1-->
+        <li class="nav_menu_li"><a href="#">ログイン</a></li><!--2-->
+        <li class="nav_menu_li"><a href="#">ホーム</a></li><!--3-->
+        <li class="nav_menu_li"><a href="#">用語解説</a></li><!--4-->
+        <li class="nav_menu_li"><a href="#">使い方</a></li><!--5-->
+        <li class="nav_menu_li"><a href="#">設定</a></li><!--6-->
+        <li class="nav_menu_li"><a href="#">このサイトについて</a></li><!--7-->
+        <li class="nav_menu_li"><a href="#">ログアウト</a></li><!--8-->
+      </ul>
+    </nav>
+    <!--↑ハンバーガーメニュー↑-->
 
-<!--↓ハンバーガーメニュー↓-->
-<span class="nav_toggle">
-  <i></i>
-  <i></i>
-  <i></i>
-</span>
-<nav class="nav">
-  <ul class="nav_menu_ul">
-    <li class="nav_menu_li"><a href="#">トップページ</a></li><!--1-->
-    <li class="nav_menu_li"><a href="#">ログイン</a></li><!--2-->
-    <li class="nav_menu_li"><a href="#">ホーム</a></li><!--3-->
-    <li class="nav_menu_li"><a href="#">用語解説</a></li><!--4-->
-    <li class="nav_menu_li"><a href="#">使い方</a></li><!--5-->
-    <li class="nav_menu_li"><a href="#">設定</a></li><!--6-->
-    <li class="nav_menu_li"><a href="#">このサイトについて</a></li><!--7-->
-    <li class="nav_menu_li"><a href="#">ログアウト</a></li><!--8-->
-  </ul>
-</nav>
-
-
-<!--↑ハンバーガーメニュー↑-->
-
-
-<!--アラート追加-->
-<% flash.each do |key, value| %>
-  <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
-<% end %>
-<script>
-  $(function(){
-    $(".alert").fadeOut(5000);
-  });
-</script>
-<!--アラート追加-->
-
+    <!--アラート追加-->
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
+    <% end %>
+    <script>
+      $(function(){
+        $(".alert").fadeOut(5000);
+      });
+    </script>
+    <!--アラート追加-->
+    
     <%= yield %>
-
-<footer id="footer">
-	Copyright(c) 20XX Sample Inc. All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank">http://f-tpl.com</a><!-- ←クレジット表記を外す場合はシリアルキーが必要です http://f-tpl.com/credit/ -->
-</footer>
-
-</body>
+    
+    <footer id="footer">
+    	<!--Copyright(c) 20XX Sample Inc. All Rights Reserved.-->
+    </footer>
+  </body>
 </html>

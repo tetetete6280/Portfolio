@@ -95,11 +95,11 @@
 
 
 
-// ↓ここから追加
-// ↓ハンバーガーメニュー↓
+↓ここから追加
+↓ハンバーガーメニュー↓
 $('.nav_toggle').on('click', function () {
     window.alert("test");
-//   $('.nav_toggle, .nav').toggleClass('show');
+  $('.nav_toggle, .nav').toggleClass('show');
 });
-// ↑ハンバーガーメニュー↑
+↑ハンバーガーメニュー↑
 

@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'pages';
+@import 'users';
 
 /* 全体↓
 ------------------------------------------------------------*/
@@ -26,6 +27,24 @@ body{
 
   &:hover {
     color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+.btn-whiteB {
+  color: #EEEEEE;
+  border: 1px solid #EEEEEE;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(0,0,0,0.0);
+  
+  font-family: "メイリオ" ;
+  font-size: 1em;
+  letter-spacing: 0.7em;
+  font-weight: bold;
+
+  &:hover {
+    color: #fff;
   border: 1px solid #fff;
   }
 }
@@ -40,27 +59,3 @@ body{
 /* ナビバー↓
 ------------------------------------------------------------*/
 
-/* 新規登録ページ
-------------------------------------------------------------*/
-.form-control {
-  height: 45px;
-}
-
-.users-new-wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-image: image-url('bg-top.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-
-  .users-new-container {
-    padding-top: 220px;
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-  }
-}

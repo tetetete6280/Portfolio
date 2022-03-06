@@ -1,3 +1,51 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 新規登録ページ
+------------------------------------------------------------*/
+.form-control {
+  height: 45px;
+}
+
+.users-new-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    .users-new-container {
+        padding-top: 220px;
+        .form-group {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.guideA{
+    font-family: "メイリオ" ;
+    font-size: 1em;
+    font-weight: bold;
+    color: #546465;
+    letter-spacing: 0.2em;
+}
+
+.guideB{
+    font-family: "メイリオ" ;
+    font-size: 1em;
+    font-weight: bold;
+    color: #546465;
+    letter-spacing: 0.2em;
+    text-decoration: underline;
+    text-decoration-color: #546465;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.heading{
+    background: #EEEEEE;
+    color: #546465;
+    font-family: roboto;
+    font-size: 2em;
+    letter-spacing: 0.7em;
+    font-weight: bold;
+}

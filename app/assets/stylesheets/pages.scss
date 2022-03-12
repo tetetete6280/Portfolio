@@ -83,11 +83,13 @@ div[class*="title"]{
   letter-spacing: 0.7em;
 }
 
-h3{
+.skill_title{
   text-align: center;
   color: #546465;
-  font-size: 1.1em;
   letter-spacing: 0.7em;
+  margin: 10px 0px;
+  
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -103,9 +105,10 @@ h3{
 .box{
   height: 300px;
   background: #ffffff;
-  border: 1px solid #546465;
+  border: 3px solid #546465;
   border-radius: 5px;
-  padding: 15px;
+  padding: 5px 15px 15px 15px;
+  margin: 10px 15px 25px 15px;
 }
 
 // .square img {

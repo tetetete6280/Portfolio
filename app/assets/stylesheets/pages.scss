@@ -63,6 +63,7 @@ div[class*="title"]{
   color: #EEEEEE;
   font-size: 1em;
   letter-spacing: 0.5em;
+  height: 180px;
 }
 /* Sec3-skill
 ------------------------------------------------------------*/
@@ -90,13 +91,21 @@ h3{
   font-weight: bold;
 }
 
-.square {
-  margin: 0.2em; 
+// .square {
+//   // margin: 0.2em; 
+//   height: 300px;
+//   background: #ffffff;
+//   border: 1px solid #546465;
+//   border-radius: 5px;
+//   // padding: 0 auto;//画像を中央にしたい。
+// }
+
+.box{
   height: 300px;
   background: #ffffff;
   border: 1px solid #546465;
   border-radius: 5px;
-  padding: 0 auto;//画像を中央にしたい。
+  padding: 15px;
 }
 
 // .square img {
@@ -108,6 +117,13 @@ h3{
 /* Sec4-text
 ------------------------------------------------------------*/
 .last-text{
+  background-color: #546465;
+  color: #EEEEEE;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+}
+
+.intro4{
   background-color: #546465;
   color: #EEEEEE;
   font-size: 1em;

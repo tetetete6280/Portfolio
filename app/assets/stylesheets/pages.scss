@@ -9,14 +9,14 @@ div[class*="description"]{
 
 /* sec-1_title↓
 ------------------------------------------------------------*/
-div[class*="title"]{
-  font-family: roboto;
-  font-size: 2em;
-  display: inline;
-  padding: 1em;
-  letter-spacing: 0.7em;
-  font-weight: bold;
-}
+// div[class*="title"]{
+//   font-family: roboto;
+//   font-size: 2em;
+//   display: inline;
+//   padding: 1em;
+//   letter-spacing: 0.7em;
+//   font-weight: bold;
+// }
 .titleA{
   background-color: #546465;
   color: #EEEEEE;
@@ -85,7 +85,8 @@ div[class*="title"]{
 
 .skill_title{
   text-align: center;
-  color: #546465;
+  // color: #546465;
+  color: red;
   letter-spacing: 0.7em;
   margin: 10px 0px;
   
@@ -111,7 +112,7 @@ div[class*="title"]{
   margin: 10px 15px 25px 15px;
 }
 
-// .square img {
+// .box img {
 // width: 100%;　
 // height: 100%;　
 // object-fit: cover;

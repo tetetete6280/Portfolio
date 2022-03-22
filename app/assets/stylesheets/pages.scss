@@ -9,14 +9,14 @@ div[class*="description"]{
 
 /* sec-1_title↓
 ------------------------------------------------------------*/
-div[class*="title"]{
-  font-family: roboto;
-  font-size: 2em;
-  display: inline;
-  padding: 1em;
-  letter-spacing: 0.7em;
-  font-weight: bold;
-}
+// div[class*="title"]{
+//   font-family: roboto;
+//   font-size: 2em;
+//   display: inline;
+//   padding: 1em;
+//   letter-spacing: 0.7em;
+//   font-weight: bold;
+// }
 .titleA{
   background-color: #546465;
   color: #EEEEEE;
@@ -63,6 +63,7 @@ div[class*="title"]{
   color: #EEEEEE;
   font-size: 1em;
   letter-spacing: 0.5em;
+  height: 180px;
 }
 /* Sec3-skill
 ------------------------------------------------------------*/
@@ -82,24 +83,36 @@ div[class*="title"]{
   letter-spacing: 0.7em;
 }
 
-h3{
+.skill_title{
   text-align: center;
-  color: #546465;
-  font-size: 1.1em;
+  // color: #546465;
+  color: red;
   letter-spacing: 0.7em;
+  margin: 10px 0px;
+  
+  font-size: 2em;
   font-weight: bold;
 }
 
-.square {
-  margin: 0.2em; 
+// .square {
+//   // margin: 0.2em; 
+//   height: 300px;
+//   background: #ffffff;
+//   border: 1px solid #546465;
+//   border-radius: 5px;
+//   // padding: 0 auto;//画像を中央にしたい。
+// }
+
+.box{
   height: 300px;
   background: #ffffff;
-  border: 1px solid #546465;
+  border: 3px solid #546465;
   border-radius: 5px;
-  padding: 0 auto;//画像を中央にしたい。
+  padding: 5px 15px 15px 15px;
+  margin: 10px 15px 25px 15px;
 }
 
-// .square img {
+// .box img {
 // width: 100%;　
 // height: 100%;　
 // object-fit: cover;
@@ -108,6 +121,13 @@ h3{
 /* Sec4-text
 ------------------------------------------------------------*/
 .last-text{
+  background-color: #546465;
+  color: #EEEEEE;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+}
+
+.intro4{
   background-color: #546465;
   color: #EEEEEE;
   font-size: 1em;

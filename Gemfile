@@ -69,6 +69,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jquery-rails'
 gem 'bcrypt'
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
+gem 'bootstrap', '~> 5.1.0'
+gem 'popper_js', '~> 2.9.3'
 
 gem 'devise'

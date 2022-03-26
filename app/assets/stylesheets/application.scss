@@ -59,3 +59,30 @@ body{
 /* ナビバー↓
 ------------------------------------------------------------*/
 
+.header-navigation {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.header-navigation:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+.header-navigation li {
+  float: left;
+  padding: 0 30px;
+  text-align: center;
+  list-style-type: none;
+  
+    &:hover {
+    color: red;
+  }
+}
+
+.header-navigation li a {
+  color: #333;
+  text-decoration: none;
+}

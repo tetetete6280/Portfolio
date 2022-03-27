@@ -1,4 +1,5 @@
-@import "bootstrap-sprockets";
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
 @import "bootstrap";
 @import 'pages';
 @import 'users';
@@ -63,31 +64,38 @@ body{
 
 /* ナビバー↓
 ------------------------------------------------------------*/
-
-.header-navigation {
-  width: 100%;
-  background-color: #fff;
-  padding: 20px 0;
+.AAA{
+  background-color: #EEEEEE;
 }
 
-.header-navigation:after {
-  clear: both;
-  display: block;
-  content: " ";
+ul {
+  list-style: none;
+  background-color: #EEEEEE;
 }
 
-.header-navigation li {
-  float: left;
-  padding: 0 30px;
-  text-align: center;
-  list-style-type: none;
-  
-    &:hover {
-    color: red;
-  }
-}
-
-.header-navigation li a {
-  color: #333;
+.target a {
   text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  // color: #546465;
+  letter-spacing: 0.7em;
+  font-family: "メイリオ" ;
+}
+
+.target a {
+    color: #546465;
+    background-color: #EEEEEE;
+  
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.target a:hover {
+  // transition: background-color 500ms;
+  // transition: color 500ms;
+  
+  background-color: #546465;
+  color: #EEEEEE;
 }

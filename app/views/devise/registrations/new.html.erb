@@ -1,7 +1,7 @@
 <div class="users-new-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-offset-4 col-md-4 users-new-container">
+      <div class="offset-md-4 col-md-4 users-new-container">
         <h1 class="text-center heading">登録する</h1>
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <%= render "devise/shared/error_messages", resource: resource %>

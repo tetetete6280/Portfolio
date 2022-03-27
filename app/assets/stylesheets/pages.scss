@@ -9,19 +9,25 @@ div[class*="description"]{
 
 /* sec-1_title↓
 ------------------------------------------------------------*/
-// div[class*="title"]{
-//   font-family: roboto;
-//   font-size: 2em;
-//   display: inline;
-//   padding: 1em;
-//   letter-spacing: 0.7em;
-//   font-weight: bold;
-// }
 .titleA{
+  font-family: roboto;
+  font-size: 2em;
+  display: inline;
+  padding: 1em;
+  letter-spacing: 0.7em;
+  font-weight: bold;
+
   background-color: #546465;
   color: #EEEEEE;
 }
 .titleB{
+  font-family: roboto;
+  font-size: 2em;
+  display: inline;
+  padding: 1em;
+  letter-spacing: 0.7em;
+  font-weight: bold;
+  
   background: #EEEEEE;  
   color: #546465;
 }
@@ -29,6 +35,7 @@ div[class*="description"]{
 .description-main{
   font-size: 1em;
   font-weight: bold;
+  color: #546465;
 }
 
 /* Sec2-intro
@@ -63,7 +70,7 @@ div[class*="description"]{
   color: #EEEEEE;
   font-size: 1em;
   letter-spacing: 0.5em;
-  height: 180px;
+  // height: 180px;
 }
 /* Sec3-skill
 ------------------------------------------------------------*/
@@ -85,8 +92,7 @@ div[class*="description"]{
 
 .skill_title{
   text-align: center;
-  // color: #546465;
-  color: red;
+  color: #546465;
   letter-spacing: 0.7em;
   margin: 10px 0px;
   

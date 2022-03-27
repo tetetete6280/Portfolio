@@ -1,19 +1,19 @@
     <!--<nav class="navbar navbar-light">-->
     <!--  <ul class="header-navigation">-->
-    <!--    <% if user_signed_in? %>-->
-    <!--        <li><%= link_to 'ホーム', "#" %></li>-->
-    <!--        <li><%= link_to '用語解説', "#" %></li>-->
-    <!--        <li><%= link_to '使い方', "#" %></li>-->
-    <!--        <li><%= link_to '設定', "#" %></li>-->
-    <!--        <li><%= link_to 'このサイトについて', "#" %></li>-->
-    <!--        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>-->
-    <!--    <% else %>-->
-    <!--        <li><%= link_to 'トップページ', pages_index_path %></li>-->
-    <!--        <li><%= link_to 'ログイン', new_user_session_path %></li>-->
-    <!--        <li><%= link_to '使い方', "#" %></li>-->
-    <!--        <li><%= link_to 'このサイトについて', "#" %></li>-->
-    <!--        <li><%= link_to 'トップページ', "#" %></li>-->
-    <!--    <% end %>-->
+        <!--<% if user_signed_in? %>-->
+        <!--    <li><%= link_to 'ホーム', "#" %></li>-->
+        <!--    <li><%= link_to '用語解説', "#" %></li>-->
+        <!--    <li><%= link_to '使い方', "#" %></li>-->
+        <!--    <li><%= link_to '設定', "#" %></li>-->
+        <!--    <li><%= link_to 'このサイトについて', "#" %></li>-->
+        <!--    <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>-->
+        <!--<% else %>-->
+        <!--    <li><%= link_to 'トップページ', pages_index_path %></li>-->
+        <!--    <li><%= link_to 'ログイン', new_user_session_path %></li>-->
+        <!--    <li><%= link_to '使い方', "#" %></li>-->
+        <!--    <li><%= link_to 'このサイトについて', "#" %></li>-->
+        <!--    <li><%= link_to 'トップページ', "#" %></li>-->
+        <!--<% end %>-->
     <!--  </ul>-->
     <!--</nav>-->
     
@@ -77,12 +77,25 @@
 
 
 <div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
+  <div class="p-4">
+      <ul class="target">
+        <% if user_signed_in? %>
+            <li><%= link_to 'ホーム', "#" %></li>
+            <li><%= link_to '用語解説', "#" %></li>
+            <li><%= link_to '使い方', "#" %></li>
+            <li><%= link_to '設定', "#" %></li>
+            <li><%= link_to 'このサイトについて', "#" %></li>
+            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+        <% else %>
+            <li><%= link_to 'トップページ', pages_index_path %></li>
+            <li><%= link_to 'ログイン', new_user_session_path %></li>
+            <li><%= link_to '使い方', "#" %></li>
+            <li><%= link_to 'このサイトについて', "#" %></li>
+        <% end %>
+      </ul>
   </div>
 </div>
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-light">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">
